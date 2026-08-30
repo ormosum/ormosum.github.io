@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Image with Text</title>
   <style>
+    * { background-color: #000000; color:#ffffff; }
     /* Container prevents elements from stretching beyond a comfortable width */
     .card-container {
       width: 100%;
@@ -29,14 +30,21 @@
       font-size: 1.25rem;
       font-weight: bold;
       margin-bottom: 12px;
-      color: #111827;
+      color: #00ff00
+    }
+    /* Text styling */
+    .normal-text {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 12px;
+      color: #ffffff
     }
 
     .caption-bottom {
       font-size: 0.95rem;
       line-height: 1.5;
       margin-top: 12px;
-      color: #4b5563;
+      color: #ffff00
     }
   </style>
 </head>
@@ -52,6 +60,9 @@
     <!-- Text BELOW the image -->
     <p class="caption-bottom">
       This image scales automatically to fit any phone screen while maintaining its aspect ratio. The surrounding text adjusts naturally above and below it.
+    </p>
+    <p class="normal-text">
+      The quick brown fox jumps over the lazy dog.
     </p>
   </div>
 
