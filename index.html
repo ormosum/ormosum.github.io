@@ -2,29 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Crucial for mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Image</title>
+  <title>Responsive Image with Text</title>
   <style>
-    /* Container prevents image from stretching beyond its wrapper */
-    .img-container {
+    /* Container prevents elements from stretching beyond a comfortable width */
+    .card-container {
       width: 100%;
-      max-width: 1000px; /* Optional cap for desktop screens */
+      max-width: 600px; /* Cap width for larger desktop screens */
       margin: 0 auto;
+      padding: 16px;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
     }
 
-    /* Core responsive CSS logic */
+    /* Core responsive CSS logic for the image */
     .responsive-img {
-      max-width: 100%;  /* Ensures image never exceeds screen width */
+      max-width: 100%;  /* Ensures image never exceeds container/screen width */
       height: auto;     /* Maintains correct aspect ratio */
       display: block;   /* Eliminates bottom gap whitespace */
+      border-radius: 8px;
+    }
+
+    /* Text styling */
+    .caption-top {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .caption-bottom {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-top: 12px;
+      color: #4b5563;
     }
   </style>
 </head>
 <body>
 
-  <div class="img-container">
-    <!-- img src="https://via.placeholder.com/800x600" alt="Responsive Example" class="responsive-img"-->
-    <img src="images/a.JPG" alt="Responsive Example" class="responsive-img">
+  <div class="card-container">
+    <!-- Text ABOVE the image -->
+    <h2 class="caption-top">Explore the Landscape</h2>
+
+    <!-- Responsive Image -->
+    <img src="images/a.JPG"  alt="Responsive Example" class="responsive-img">
+
+    <!-- Text BELOW the image -->
+    <p class="caption-bottom">
+      This image scales automatically to fit any phone screen while maintaining its aspect ratio. The surrounding text adjusts naturally above and below it.
+    </p>
   </div>
 
 </body>
