@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ormosum's site</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image</title>
+  <style>
+    /* Container prevents image from stretching beyond its wrapper */
+    .img-container {
+      width: 100%;
+      max-width: 600px; /* Optional cap for desktop screens */
+      margin: 0 auto;
+    }
+
+    /* Core responsive CSS logic */
+    .responsive-img {
+      max-width: 100%;  /* Ensures image never exceeds screen width */
+      height: auto;     /* Maintains correct aspect ratio */
+      display: block;   /* Eliminates bottom gap whitespace */
+    }
+  </style>
 </head>
 <body>
-    <p>Line one.</p>
-    <!-- p>♾️♾️🪾🦇🖤🦇🪾♾️♾️  00000000000000088888888800000000END</p-->
-    <!-- p>♾️ ♾️🦇🖤🦇♾️ ♾️</p -->
-    <p>
-There is not a new one. Inside the whale it was warm & dark. The quick brown fox jumps over the lazy dog. The hill is covered in cloud. No rain today. 
-    <img src="images/a.JPG" alt=test width=600>
-    </p>
+
+  <div class="img-container">
+    <!-- img src="https://via.placeholder.com/800x600" alt="Responsive Example" class="responsive-img"-->
+    <img src="images/a.JPG" alt="Responsive Example" class="responsive-img">
+  </div>
+
 </body>
 </html>
