@@ -2,7 +2,7 @@ body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 2rem;
+    /* padding: 2rem; */
     background-color: #000;
     color: #ffffff;
 }
